@@ -1,6 +1,6 @@
 import java.util.date;
 import java.security.MessageDigest;
-
+   
 public class Block{
 	public String hash;
 	public String previousHash;
@@ -49,7 +49,7 @@ public String calculateHash(){
 	return calculatedhash;
 
 }
-
+  
 
 public void mineBlock(int difficulty) {
 		String target = new String(new char[difficulty]).replace('\0', '0'); //Create a string with difficulty * "0" 
